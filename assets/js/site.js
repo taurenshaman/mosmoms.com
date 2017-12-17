@@ -18,5 +18,5 @@ $(document)
         //$('.ui.sidebar').sidebar('attach events', '.toc.item');
 
         // insert footer
-        $("<div/>").load("footer.html").insertAfter($("#footerline"))
+        $("<div/>").load("/footer.html").insertAfter($("#footerline"))
     });
