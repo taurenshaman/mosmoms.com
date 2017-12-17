@@ -1,6 +1,6 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
+
 <head>
     <!-- Standard Meta -->
     <meta charset="utf-8" />
@@ -35,30 +35,9 @@
     <script src="assets/semantic-ui/components/visibility.js"></script>
     <script src="assets/semantic-ui/components/sidebar.js"></script>
     <script src="assets/semantic-ui/components/transition.js"></script>
-    <script>
-        $(document)
-            .ready(function () {
-
-                // fix menu when passed
-                $('.masthead')
-                    .visibility({
-                        once: false,
-                        onBottomPassed: function () {
-                            $('.fixed.menu').transition('fade in');
-                        },
-                        onBottomPassedReverse: function () {
-                            $('.fixed.menu').transition('fade out');
-                        }
-                    })
-                    ;
-
-                // create sidebar and attach to menu open
-                //$('.ui.sidebar').sidebar('attach events', '.toc.item');
-
-            })
-            ;
-    </script>
+    <script src="assets/js/site.js"></script>
 </head>
+
 <body>
 
     <!-- Following Menu -->
@@ -85,17 +64,16 @@
             </div>
 
             <div class="ui text container">
-                <h1 class="ui header">
+                <h1 class="ui header" style="margin-top: 1.5em;">
                     Mos &amp; Moms
                 </h1>
                 <h2>陪伴宝宝一段旅程</h2>
-                <!--<div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>-->
+                <img class="ui fluid image" src="images/baby-shower-icons-1024x512.jpg">
             </div>
 
         </div>
 
-        <div class="ui four stackable link cards centered" style="margin: 20px; padding: 20px;">
-
+        <div class="ui six stackable link cards centered" style="margin: 20px; padding: 20px;">
             <div class="card">
                 <a class="image" href="http://www.dianping.com/shop/93488962">
                     <img src="images/qrcode-dianping.png">
@@ -111,7 +89,7 @@
                 </div>
             </div>
 
-            <div class="card">
+            <!-- <div class="card">
                 <a class="image" href="https://waimai.baidu.com/waimai/shop/2171458924">
                     <img src="images/qrcode-baiduwaimai.png">
                 </a>
@@ -124,7 +102,7 @@
                         https://waimai.baidu.com/waimai/shop/2171458924
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <div class="card">
                 <span class="image">
@@ -140,12 +118,12 @@
 
         </div>
 
-        <div class="ui vertical footer segment">
+        <div class="ui inverted vertical footer segment">
             <div class="ui container">
                 <div class="ui stackable divided equal height stackable grid">
                     <div class="three wide column">
-                        <h4 class="ui header">联系我们</h4>
-                        <div class="ui link list">
+                        <h4 class="ui inverted header">联系我们</h4>
+                        <div class="ui inverted link list">
                             <span class="item">客服微信：mo-si-love</span>
                             <span class="item">微信公众号：mos-moms</span>
                             <span class="item">座机：022-27303138</span>
@@ -153,20 +131,26 @@
                         </div>
                     </div>
                     <div class="three wide column">
-                        <h4 class="ui header">门店</h4>
-                        <div class="ui link list">
-                            <p>天津金街店：<br />天津市和平区和平路246号</p>
+                        <h4 class="ui inverted header">门店</h4>
+                        <div class="ui inverted link list">
+                            <p>天津金街店：
+                                <br />天津市和平区和平路246号</p>
                         </div>
                     </div>
-                    <div class="seven wide column">
-                        <h4 class="ui header">理念</h4>
+                    <div class="ten wide column">
+                        <h4 class="ui inverted header">理念</h4>
                         <p>陪伴宝宝一段旅程。</p>
                     </div>
                 </div>
+                <div class="ui horizontal divider">
+                    <i class="heart icon grey"></i>
+                </div>
+                <h4 class="ui centered header grey">Mos &amp; Moms</h4>
             </div>
+            
         </div>
-    </div>
 
+    </div>
 </body>
 
 </html>
